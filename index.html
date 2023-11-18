@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tareas</title>
+    <link rel="stylesheet" href="lib/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 
     <script src="js/main.js"></script>
+    <script src="lib/fontawesome-free-6.3.0-web/js/all.min.js"></script>
 
 
 </head>
+
 <body>
 
     <main class="container">
         <div class="container-contenido">
+            <h1>Lista de tareas</h1>
+            <br>
+            <div class="inputs-container">
+                <input type="text" id="nuevaTarea" class="nueva-tarea" title="Agregar nueva tarea">
+                <button onclick="agregarTarea()" class="btn-nueva-tarea">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <br>
+            <table class="tablaTareas" id="tablaDeTareas">
+                <thead>
+                    <th>Nº</th>
+                    <th>Nombre de la tarea</th>
+                    <th>Eliminar</th>
+                </thead>
+                <tbody id="tareas">
 
+                </tbody>
+            </table>
         </div>
-        <h1>Lista de tareas</h1>
-        <div class="inputs-container">
-            <input type="text">
-            <input type="submit" value="enviar">
-        </div>
-
-        <table class="tablaTareas" id="tablaDetareas">
-            <thead>
-                <th>Nº</th>
-                <th>Tarea</th>
-                <th>Eliminar</th>
-            </thead>
-            <tbody id="tareas">
-                <td>1</td>
-                <td>Hacer la tarea</td>
-                <td><button>x</button></td>
-            </tbody>
-        </table>
     </main>
 
 </body>
+
 </html>

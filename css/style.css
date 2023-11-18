@@ -7,13 +7,62 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: crimson;
+    background-color: #2b9348;
+    font-style: italic;
 }
 .container {
     height: 20rem;
     width: 40rem;
-    background-color: white;
+    margin: 5rem;
+    background-color: #f9f7f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
 }
 .container-contenido {
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.inputs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.nueva-tarea {
+    height: 35px;
+}
 
+.btn-nueva-tarea {
+    border: none;
+    height: 35px;
+    width: 35px;
+    background-color: #007f5f;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.fa-plus {
+    height: 20px;
+    padding: 5px;
+    color: #f9f7f3;
+}
+
+.btn-eliminar {
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 2px;
+    background-color: #bf0603;
+    cursor: pointer;
+    color: #f9f7f3;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
