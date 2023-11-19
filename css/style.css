@@ -88,12 +88,12 @@ td {
 
 @media (max-width: 1024px) {
     .container {
-        height: 40rem;
+        height: 50rem;
         width: 40rem;
 
     }
     .container-contenido {
-        height: 50vh;
+        height: 30vh;
         width: 100%;
     }
 }
