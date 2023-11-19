@@ -1,16 +1,23 @@
 let numeroDeTarea = 1;
+const limiteTareas = 10; // Establece el límite de tareas
 
 // Función para agregar una nueva tarea
 function agregarTarea() {
     const nuevaTarea = document.getElementById('nuevaTarea');
     const tarea = nuevaTarea.value;
 
+    // Obtener la cantidad actual de tareas
+    const cantidadTareas = document.getElementById('tareas').childElementCount;
+
+    // Verificar si se ha alcanzado el límite de tareas
+    if (cantidadTareas >= limiteTareas) {
+        alert("¡Has alcanzado el límite de 10 tareas! Debes eliminar una tarea antes de agregar otra.");
+        return;
+    }
+
     if (tarea.trim() !== '') {
         // Crear una nueva fila de la tabla
         const nuevaFila = document.createElement('tr');
-
-        // Obtener la cantidad actual de tareas
-        const cantidadTareas = document.getElementById('tareas').childElementCount;
 
         // Utilizar el número de la tarea más alto actual o reiniciar si la lista está vacía
         numeroDeTarea = cantidadTareas > 0 ? cantidadTareas + 1 : 1;
