@@ -86,14 +86,14 @@ td {
     background-color: #bf0603a8;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1024px) {
     .container {
         height: 40rem;
         width: 40rem;
 
     }
     .container-contenido {
-        height: 60vh;
+        height: 30vh;
         width: 100%;
     }
 }
