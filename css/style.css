@@ -97,3 +97,14 @@ td {
         width: 100%;
     }
 }
+@media (max-width: 890px) {
+    .container {
+        height: 40rem;
+        width: 40rem;
+
+    }
+    .container-contenido {
+        height: 40vh;
+        width: 100%;
+    }
+}
