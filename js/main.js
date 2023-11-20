@@ -1,6 +1,8 @@
 let numeroDeTarea = 1;
 const limiteTareas = 10; // Establece el límite de tareas
 
+
+
 // Función para agregar una nueva tarea
 function agregarTarea() {
     const nuevaTarea = document.getElementById('nuevaTarea');
@@ -67,3 +69,19 @@ function eliminarTarea(fila) {
         numeroDeTarea = 1;
     }
 }
+
+
+// Esperar a que el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtener el elemento con ID "container"
+    const container = document.getElementById('container');
+
+    // Obtener el input con la clase "nueva-tarea"
+    const inputNuevaTarea = document.getElementById('nuevaTarea');
+
+    // Agregar un event listener al input
+    inputNuevaTarea.addEventListener('click', () => {
+        // Añadir la clase "animar" al elemento con ID "container"
+        container.classList.add('animar');
+    });
+});

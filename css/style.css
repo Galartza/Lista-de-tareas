@@ -28,6 +28,9 @@ h1 {
     -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
 }
+.animar {
+    animation: flotando  1000ms ease-in infinite;
+}
 .container-contenido {
     height: 60vh;
     width: 100%;
@@ -106,5 +109,20 @@ td {
     .container-contenido {
         height: 60vh;
         width: 100%;
+    }
+}
+
+@keyframes flotando {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(1vh);
+    }
+
+    100% {
+        transform: translateX(0vh);
     }
 }
