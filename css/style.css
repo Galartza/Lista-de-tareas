@@ -9,17 +9,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2b9348;
+    /* background-color: #2b9348; */
     font-style: italic;
+
+    background: url(../811143.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(43%2c 147%2c 72%2c 1)'%3e%3c/rect%3e%3cpath d='M744.1057858413742 378.75294937558954L683.5363277671855 360.23500768298607 686.0441442653747 460.34816564057087z' fill='rgba(0%2c 127%2c 95%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M184.37%2c256.839C206.872%2c256.145%2c223.12%2c238.006%2c234.393%2c218.519C245.687%2c198.995%2c254.382%2c175.255%2c242.737%2c155.939C231.332%2c137.022%2c206.423%2c134.285%2c184.37%2c135.544C164.863%2c136.657%2c147.102%2c145.588%2c136.505%2c162.003C124.823%2c180.098%2c118.994%2c202.552%2c128.698%2c221.78C139.289%2c242.764%2c160.876%2c257.564%2c184.37%2c256.839' fill='rgba(0%2c 127%2c 95%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M842.33%2c593.359C891.016%2c590.746%2c935.16%2c566.718%2c960.47%2c525.046C986.852%2c481.608%2c991.998%2c428.94%2c970.022%2c383.115C944.539%2c329.979%2c901.172%2c281.913%2c842.33%2c278.702C778.767%2c275.234%2c718.526%2c311.873%2c687.983%2c367.725C658.547%2c421.553%2c665.331%2c488.392%2c699.97%2c539.029C730.706%2c583.96%2c787.97%2c596.277%2c842.33%2c593.359' fill='rgba(0%2c 127%2c 95%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M130.27352934241847 39.191456615402565L170.11964119202258 133.06301348517002 263.99119806179004 93.2169016355659 224.14508621218593-0.6546552342015559z' fill='rgba(0%2c 127%2c 95%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M579.0673705597682 369.97167868553845L577.2059143903234 476.61443121036757 738.1007712622895 426.08523920212014z' fill='rgba(0%2c 127%2c 95%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M493.455018650896 98.22399210295903L676.4471371205384 42.468327876912525 556.1560603899377-73.69541463128505z' fill='rgba(0%2c 127%2c 95%2c 1)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+     */
 }
 h1 {
     font-weight: 800;
+    color: #f9f7f3;
+    text-shadow: 5px 4px 2px rgba(0,0,0,0.6);
 }
 .container {
     height: 40rem;
     width: 40rem;
     margin: 2rem;
-    background-color: #f9f7f3;
+    background-color: #f9f7f341;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +37,7 @@ h1 {
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
 }
 .animar {
-    animation: flotando  1000ms ease-in infinite;
+    animation: flotando  1500ms ease-in-out infinite;
 }
 .container-contenido {
     height: 60vh;
@@ -43,31 +51,22 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 .nueva-tarea {
     padding: 5px;
     height: 35px;
     border: none;
-    background-color: #ced4dacb;
+    font-weight: 700;
+    color: #f9f7f3;
+    background-color: #f9f7f3c5;
     border-radius: 2px;
 }
 td {
     font-weight: 700;
 }
 
-.btn-nueva-tarea {
-    border: none;
-    height: 35px;
-    width: 35px;
-    padding: 3px;
-    background-color: #007f5f;
-    border-radius: 2px;
-    cursor: pointer;
-}
-.btn-nueva-tarea:hover {
-    background-color: #007f5fcb;
-}
+
 .fa-plus {
     height: 20px;
     padding: 5px;
@@ -126,3 +125,112 @@ td {
         transform: translateX(0vh);
     }
 }
+
+.input {
+    max-width: 200px;
+    height: 3.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    outline: none;
+    color: black;
+  }
+  
+  .input:invalid {
+    animation: justshake 0.3s forwards;
+  }
+  
+  @keyframes justshake {
+    25% {
+      transform: translateX(5px);
+    }
+  
+    50% {
+      transform: translateX(-5px);
+    }
+  
+    75% {
+      transform: translateX(5px);
+    }
+  
+    100% {
+      transform: translateX-(5px);
+    }
+  }
+.tablaTareas{
+    background-color: #f9f7f3c5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button {
+    height: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #2b9348;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  .button span:nth-child(6) {
+    position: relative;
+  }
+  
+  .button span:nth-child(1) {
+    transform: translate(-4.7em, -2em);
+  }
+  
+  .button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  .button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  .button span:nth-child(4) {
+    transform: translate(6.5em, 3.4em);
+  }
+  
+  .button span:nth-child(5) {
+    transform: translate(6.5em, -3.8em);
+  }
+  
+  .button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+    
