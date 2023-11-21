@@ -93,8 +93,9 @@ table {
 }
 @media (max-width: 1024px) {
     body {
-        background-size: auto;
+        background-size: cover;
         background-position: center;
+        height: 100vh;
     }
     .container {
         height: 50rem;
