@@ -89,6 +89,10 @@ td {
 }
 
 @media (max-width: 1024px) {
+    body {
+        background-size: auto;
+        background-position: center;
+    }
     .container {
         height: 50rem;
         width: 40rem;
