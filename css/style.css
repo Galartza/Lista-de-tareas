@@ -13,7 +13,7 @@ body {
     align-items: center;
     /* background-color: #2b9348; */
     font-style: italic;
-    background: url(../casa.jpg);
+    background: url(../img/casa.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -136,7 +136,7 @@ td {
 
     }
     .container-contenido {
-        height: 60vh;
+        height: 30vh;
         width: 100%;
     }
 }
