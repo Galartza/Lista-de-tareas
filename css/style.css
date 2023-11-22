@@ -1,28 +1,32 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 /* ---------- Elementos ---------- */
 body {
   height: 100vh;
-    font-family: 'Prompt', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #2b9348; */
-    font-style: italic;
-    background: url(../img/casa.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #2b9348; */
+  font-style: italic;
+  background: url(../img/casa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 h1 {
-    font-weight: 800;
-    color: #f9f7f3;
-    text-shadow: 1px 3px 5px rgba(0,0,0,0.9);
+  padding: 2rem 0 0 0;
+  font-weight: 800;
+  color: #f9f7f3;
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.9);
 }
-.tablaTareas{
+
+.tablaTareas {
   background-color: #f9f7f3c5;
 }
 
@@ -30,48 +34,52 @@ table {
   border-radius: 5px;
   box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.6);
 }
+
 td {
   font-weight: 700;
 }
+
 /* ---------- Clases del container y otras dentro de el ---------- */
 .container {
-    height: 40rem;
-    width: 40rem;
-    margin: 2rem;
-    background-color: #f9f7f354;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
-    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.48);
+  height: 35rem;
+  width: 30rem;
+  margin: 2rem;
+  background-color: #f9f7f354;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.48);
 }
+
 .container-contenido {
-    height: 60vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }
+
 .inputs-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /* ---------- Clases del input ---------- */
 
 .nueva-tarea {
-    padding: 5px;
-    height: 35px;
-    border: none;
-    font-weight: 700;
-    color: #f9f7f3;
-    background-color: #f9f7f3c5;
-    border-radius: 2px;
+  padding: 5px;
+  height: 35px;
+  border: none;
+  font-weight: 700;
+  color: #f9f7f3;
+  background-color: #f9f7f3c5;
+  border-radius: 2px;
 }
 
 .input {
@@ -101,54 +109,63 @@ td {
 }
 
 .fa-plus {
-    height: 20px;
-    padding: 5px;
-    color: #f9f7f3;
+  height: 20px;
+  padding: 5px;
+  color: #f9f7f3;
 }
+
 /* ---------- Clases del boton eliminar tarea ---------- */
 
 .btn-eliminar {
-    height: 30px;
-    width: 50px;
-    border: none;
-    border-radius: 2px;
-    background-color: #bf0603;
-    cursor: pointer;
-    color: #f9f7f3;
-    font-size: 1.2rem;
-    font-weight: bold;
+  height: 30px;
+  width: 50px;
+  border: none;
+  border-radius: 2px;
+  background-color: #bf0603;
+  cursor: pointer;
+  color: #f9f7f3;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
+
 .btn-eliminar:hover {
-    background-color: #bf0603a8;
+  background-color: #bf0603a8;
 }
 
 /* ---------- Media queries ---------- */
 
 @media (max-width: 1024px) {
-    body {
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-    }
-    .container {
-        height: 40rem;
-        width: 40rem;
+  body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
 
-    }
-    .container-contenido {
-        height: 30vh;
-        width: 100%;
-    }
+  .container {
+    height: 40rem;
+    width: 40rem;
+
+  }
+
+  .container-contenido {
+    height: 30vh;
+    width: 100%;
+  }
 }
+
 @media (max-width: 890px) {
-    .container {
-        height: 40rem;
-        width: 40rem;
+  .container {
+    height: 40rem;
+    width: 40rem;
 
-    }
-    .container-contenido {
-        height: 60vh;
-        width: 100%;
-    }
+  }
+
+  .container-contenido {
+    height: 60vh;
+    width: 100%;
+  }
+
+  h1 {
+    padding: 2rem 0 0 0;
+  }
 }
-  
