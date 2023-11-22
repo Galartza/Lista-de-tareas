@@ -1,0 +1,88 @@
+/* ---------- Animacion container ---------- */
+
+@keyframes flotando {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(1vh);
+    }
+
+    100% {
+        transform: translateX(0vh);
+    }
+}
+
+.animar {
+    animation: flotando 1500ms ease-in-out infinite;
+}
+
+/* ---------- Animacion input agregar tarea ---------- */
+
+
+.input:invalid {
+    animation: justshake 0.3s forwards;
+}
+
+@keyframes justshake {
+    25% {
+        transform: translateX(5px);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX-(5px);
+    }
+}
+
+/* ---------- Animacion botón de agregar tareas ---------- */
+
+.button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #2b9348;
+    border-radius: 50%;
+    transition: .6s ease;
+}
+
+.button span:nth-child(6) {
+    position: relative;
+}
+
+.button span:nth-child(1) {
+    transform: translate(-7.7em, -2em);
+}
+
+.button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+}
+
+.button span:nth-child(3) {
+    transform: translate(-.2em, 2.8em);
+}
+
+.button span:nth-child(4) {
+    transform: translate(6.5em, 3.4em);
+}
+
+.button span:nth-child(5) {
+    transform: translate(6.5em, -3.8em);
+}
+
+.button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+}

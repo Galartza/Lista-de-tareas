@@ -24,13 +24,17 @@ function agregarTarea() {
         // Utilizar el número de la tarea más alto actual o reiniciar si la lista está vacía
         numeroDeTarea = cantidadTareas > 0 ? cantidadTareas + 1 : 1;
 
-        // Columnas de la fila
+        // Columnas de la fila numeros
         const columnaNumero = document.createElement('td');
         columnaNumero.textContent = numeroDeTarea++;
+        columnaNumero.style.color = "#f9f7f3";
+        columnaNumero.style.textShadow = "1px 1px 2px rgba(0,0,0,0.9)";
 
+        // Columnas de la fila tareas
         const columnaTarea = document.createElement('td');
         columnaTarea.textContent = tarea;
 
+        // Columnas de la fila eliminar tarea
         const columnaEliminar = document.createElement('td');
         const botonEliminar = document.createElement('button');
         botonEliminar.textContent = "x";
@@ -70,6 +74,7 @@ function eliminarTarea(fila) {
     }
 }
 
+// Animación del container
 
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function () {
