@@ -44,7 +44,8 @@ td {
   height: 35rem;
   width: 30rem;
   margin: 2rem;
-  background-color: #f9f7f354;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
   align-items: center;
