@@ -132,6 +132,11 @@ td {
 .btn-eliminar:hover {
   background-color: #bf0603a8;
 }
+/* ---------- Clase para marcar la tarea como completa ---------- */
+
+.completada {
+  background-color: lightgreen;
+}
 
 /* ---------- Media queries ---------- */
 

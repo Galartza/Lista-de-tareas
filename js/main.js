@@ -1,8 +1,6 @@
 let numeroDeTarea = 1;
 const limiteTareas = 10; // Establece el límite de tareas
 
-
-
 // Función para agregar una nueva tarea
 function agregarTarea() {
     const nuevaTarea = document.getElementById('nuevaTarea');
@@ -44,9 +42,19 @@ function agregarTarea() {
             eliminarTarea(nuevaFila);
         };
 
+        // Columna para marcar como completada
+        const columnaCompletada = document.createElement('td');
+        const checkboxCompletada = document.createElement('input');
+        checkboxCompletada.type = "checkbox";
+        checkboxCompletada.onchange = function () {
+            marcarComoCompletada(nuevaFila, checkboxCompletada.checked);
+        };
+
         // Agregar la fila a la tabla
         nuevaFila.appendChild(columnaNumero);
         nuevaFila.appendChild(columnaTarea);
+        columnaCompletada.appendChild(checkboxCompletada);
+        nuevaFila.appendChild(columnaCompletada);
         columnaEliminar.appendChild(botonEliminar);
         nuevaFila.appendChild(columnaEliminar);
 
@@ -71,6 +79,15 @@ function eliminarTarea(fila) {
     // Actualizar el número de tarea más alto cuando la lista está vacía
     if (filas.length === 0) {
         numeroDeTarea = 1;
+    }
+}
+
+// Función para marcar una tarea como completada
+function marcarComoCompletada(fila, completada) {
+    if (completada) {
+        fila.classList.add("completada");
+    } else {
+        fila.classList.remove("completada");
     }
 }
 
